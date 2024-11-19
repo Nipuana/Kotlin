@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".task1">
+
+    <TextView
+        android:id="@+id/Heading"
+        android:layout_width="287dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="36dp"
+        android:text="Your Fries\n deserve better"
+        android:textColor="@color/lighterRed"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="205dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="1dp"
+        android:text="Join Tomatobasil now its free"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Heading" />
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/FirstName"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="42dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:boxStrokeColor="@color/lighterRed"
+        app:boxStrokeWidth="3dp"
+        app:boxStrokeWidthFocused="3dp"
+        app:layout_constraintTop_toBottomOf="@+id/slogan">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="FIRST NAME"
+            android:paddingLeft="50dp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/LastName"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:boxStrokeColor="@color/lighterRed"
+        app:boxStrokeWidth="3dp"
+        app:boxStrokeWidthFocused="3dp"
+        app:layout_constraintTop_toBottomOf="@+id/FirstName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="LAST NAME"
+            android:paddingLeft="50dp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Email"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:boxStrokeColor="@color/lighterRed"
+        app:boxStrokeWidth="3dp"
+        app:boxStrokeWidthFocused="3dp"
+        app:layout_constraintTop_toBottomOf="@+id/LastName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="EMAIL"
+            android:paddingLeft="50dp"
+            android:textStyle="bold"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Password"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="29dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:boxStrokeColor="@color/lighterRed"
+        app:boxStrokeWidth="3dp"
+        app:boxStrokeWidthFocused="3dp"
+        app:endIconMode="password_toggle"
+
+        app:layout_constraintTop_toBottomOf="@+id/Email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="PASSWORD"
+            android:paddingLeft="50dp"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/SignupButton"
+        android:layout_width="322dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/lighterRed"
+        android:text="Sign UP"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/Password" />
+</androidx.constraintlayout.widget.ConstraintLayout>
