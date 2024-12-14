@@ -120,7 +120,7 @@
         android:layout_height="59dp"
         android:layout_marginStart="48dp"
         android:layout_marginTop="24dp"
-        android:background="@color/lighterRed"
+        android:backgroundTint="@color/lighterRed"
         android:text="Sign UP"
         android:textSize="25sp"
         android:textStyle="bold"

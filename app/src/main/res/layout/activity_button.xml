@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ButtonActivity">
+
+
+    <Button
+        android:id="@+id/conn"
+        android:layout_width="142dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="134dp"
+        android:layout_marginTop="43dp"
+        android:text="Submit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Pssword" />
+
+    <EditText
+        android:id="@+id/uName"
+        android:layout_width="314dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Enter Username"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Pssword"
+        android:layout_width="311dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="58dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uName" />
+</androidx.constraintlayout.widget.ConstraintLayout>
